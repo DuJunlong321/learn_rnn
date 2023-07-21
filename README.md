@@ -31,3 +31,14 @@
 RNN参数维度讲解：
 
 https://www.bilibili.com/video/BV1dZ4y1g7DE?p=4&vd_source=168ed2a82d904bea741505ff76857c55
+
+RNN MNIST数据集分类，特别感谢：
+
+代码风格：小土堆，参考learn_pytorch
+
+LSTM生成藏头诗，特别感谢：
+
+代码风格：自由潇洒
+
+https://www.bilibili.com/video/BV1G54y177iw/?p=14&spm_id_from=pageDriver&vd_source=168ed2a82d904bea741505ff76857c55
+
