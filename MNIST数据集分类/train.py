@@ -20,7 +20,7 @@ from module import *
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # 2.可视化
-writer = SummaryWriter(log_dir="../log")
+writer = SummaryWriter(log_dir="./log")
 
 # 3.定义超参数
 learning_rate = 0.01 # 学习率
@@ -67,7 +67,7 @@ criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
 
 # 8.参数
-total_train_step = 0 # 训练步数
+total_train_step = 0 # 训练步数， 所有的batches
 total_test_step = 0 # 测试步数
 sequence_dim = 28 # 序列长度
 

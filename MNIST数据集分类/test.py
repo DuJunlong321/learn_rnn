@@ -10,10 +10,10 @@ import torchvision
 from PIL import Image
 from torch.utils.tensorboard import SummaryWriter
 
-writer = SummaryWriter("../testlog")
+writer = SummaryWriter("./testlog")
 
 # 1.读取图片
-img_path = "img/img_13.png"
+img_path = "img/img_11.png"
 img = Image.open(img_path)
 # 2.反转图像颜色
 img = PIL.ImageOps.invert(img)
@@ -41,6 +41,7 @@ img = img.cuda()
 
 # 4.测试
 module = torch.load("rnn_29.pth")
+print(module)
 module.eval()
 with torch.no_grad():
     output = module(img)

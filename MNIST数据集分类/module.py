@@ -1,7 +1,7 @@
 # PROJECT_NAME: learn_rnn
 # DATE: 2023/7/15
 # USER: du_jl
-# DESCRIPTION:demo03所用的RNN模型
+# DESCRIPTION:RNN模型
 
 import torch.nn
 from torch import nn
