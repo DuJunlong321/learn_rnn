@@ -71,6 +71,7 @@ if __name__=="__main__":
     model = Mymodel(words_num=words_num, embedding_num=embedding_num, hidden_num=hidden_num)
     model = model.to(device)
     # print(model)
+
     # 优化器
     optimizer = torch.optim.Adam(model.parameters(), lr=lr)
     # 损失
@@ -84,6 +85,7 @@ if __name__=="__main__":
 
             xs_embedding = xs_embedding.to(device)
             ys_index = ys_index.to(device)
+            writer.add_graph(model, xs_embedding)
             pre, _ = model(xs_embedding)
             loss = cross_entropy_loss(pre, ys_index.reshape(-1))
             optimizer.zero_grad()
