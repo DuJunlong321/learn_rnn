@@ -63,7 +63,7 @@ def generate_head():
 
 
 
-model = torch.load("lstm_(99, 99).pth")
+model = torch.load("lstm_99.pth")
 # print(model)
 hidden_num = 256    # 和train保持一致
 all_data, (w1, index_2_vec, vec_2_index) = train_word_2_vector() # 训练词向量
